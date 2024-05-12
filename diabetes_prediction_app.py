@@ -28,10 +28,10 @@ age = st.sidebar.slider('Age (years)', 21, 81, 30)
 
 # Convert input data to numpy array
 input_data = np.array([[pregnancies, glucose, blood_pressure, skin_thickness, insulin, bmi, dpf, age]])
-doctor_image = Image.open(r"C:\Users\91998\OneDrive\Documents\doctor_img.jpeg")  # Path to your doctor image
+doctor_image = Image.open(r"doctor_img.jpeg")  # Path to your doctor image
 
 # Display doctor image
-st.image(doctor_image, caption='Dr.Diabetes Predicter')
+st.image(doctor_image, caption='Dr.Diabetes Predictor')
 # Button to make predictions
 if st.sidebar.button('Predict'):
     # Predict diabetes likelihood
